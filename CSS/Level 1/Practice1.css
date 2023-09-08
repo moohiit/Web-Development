@@ -1,0 +1,19 @@
+#box{
+    background-color: blue;
+    color: white;
+}
+#box1{
+    background-color:#ebf0ce;
+    color: red;
+}
+#box2{
+    background-color:rgb(204, 221, 194);
+}
+
+.heading{
+    color: red;
+}
+
+button{
+    background-color: green;
+}

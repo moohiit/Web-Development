@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <div>
+        <h1>Trip to Nainital Form</h1>
+        <form action="form.php">
+            <label for="Name">Name:</label>
+            <input type="text" placeholder="Enter Your Name"><br><br>
+            <label for="Name">Course:</label>
+            <input type="text" placeholder="Enter Your Course"><br><br>
+            <label for="SectionA"><input type="radio" value="Section A" name="section" id="SectionA"> Section A</label>
+            <label for="SectionB"><input type="radio" value="Section B" name="section" id="SectionB"> Section B</label>
+            <label for="SectionC"><input type="radio" value="Section C" name="section" id="SectionC"> Section
+                C</label><br><br>
+            <textarea name="reason" id="reason" cols="30" rows="10"
+                placeholder="Define Reason if you don't want to join"></textarea><br><br>
+            <label for="vehicle">Vehicle Preference :
+                <select name="car" id="car">Vehicle Preferences
+                    <option value="no Selection">Select Vehicle</option>
+                    <option value="Omni">Omni</option>
+                    <option value="Omni">Alto</option>
+                    <option value="Omni">Echo</option>
+                    <option value="Omni">Tourister</option>
+                </select><br><br>
+            </label>
+            <label for="agree"><input type="checkbox" name="terms and conditions" id="agree"> Agree terms and
+                conditions</label><br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
