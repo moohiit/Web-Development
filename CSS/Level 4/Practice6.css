@@ -1,0 +1,31 @@
+.navbar{
+    background-color: #0f1111;
+    height: 50px;
+    color: #f08804;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none !important;  /* remove underline from links */
+    color: black;
+    background-color: aqua;
+
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color:#f08804;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color:aquamarine;
+}

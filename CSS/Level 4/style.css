@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.container{
+    width: 800px;
+    height: 200px;
+    display: flex;
+
+    /* Flexbox Direction */
+
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+
+    /* Flex-Properties */ 
+
+    /*   1.Justify-content */
+    /*     justify-content: start;  works along main axis */
+    /*     justify-content: end,center baseline, space-between, space-around, space-evenly
+    /*   2.Flex-wrap */
+    /*     flex-wrap: nowrap;*/
+    /*     flex-wrap: wrap*/
+    /*     flex-wrap: wrap,nowrap,wrap-reverse,initial; */
+    /*   3.Align-items */
+    /*     align-items: stretch ;works along cross axis*/
+    /*     align-items: flex-start ,flex-end,baseline,stretch;*/
+    /*   4.Align-content */
+    /*     align-content: stretch ;*/
+    /*     align-content: flex-start;*/
+    /*     align-content: flex-end;*/
+    /*     align-content: center;*/
+    /*     align-content: space-between;*/
+    /*     align-content: space-around;*/
+    /*    5.Align-self*/
+            /* align-self: flex-start; */
+            /* align-self: flex-start; */
+    /*    6.Flex-grow*/
+    /*         flex-grow: 1; */
+
+    /*    7.flex-shrink*/
+    /*             flex-shrink: 2; */
+
+}
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: pink;
+}
+#box3{
+    background-color: rebeccapurple;
+}
+#box4{
+    background-color: peru;
+}
+#box5{
+    background-color: aquamarine;
+}
