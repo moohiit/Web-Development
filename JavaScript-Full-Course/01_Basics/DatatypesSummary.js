@@ -35,7 +35,10 @@ const myFunction = function(){   //function
     console.log("Hello World");
 }
 // console.log(typeof myFunction)
+<<<<<<< HEAD
 
+=======
+>>>>>>> a4f5f4bd0853b05f593f86e8d97d7f3e6e999fb4
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -48,4 +51,21 @@ newName = "Arun"
 console.log(name);
 
 
+let myyoutubename = "hiteshchaudharydotcom"
 
+let anothername = myyoutubename
+anothername = "chaiandcode"
+
+console.log(myyoutubename)
+console.log(anothername);
+
+let userOne ={
+    email:"user@gmail.com",
+    upi:"user1@ybl"
+}
+
+let userTwo = userOne //reference to userOne is used.
+userTwo.email="user2@gmail.com" //it will also update the userOne email
+
+console.log(userOne.email)
+console.log(userTwo.email)
