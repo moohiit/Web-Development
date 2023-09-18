@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+        body{
+            background-color: #212121;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            margin: 20px;
+            padding: 20px;
+        }
+        .heading{
+            text-align: center;
+            margin: 30px;
+            padding-bottom: 30px;
+            color: aliceblue;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+        .apiDemo{
+            border: solid white;
+            color: greenyellow;
+            font-size: large;
+        }
+    </style>
+    <title>API Request Demo</title>
+</head>
+<body>
+    <div class="heading">
+        API Request Demo Using Java Scrips
+    </div>
+    <div class="apiDemo">
+        
+    </div>
+</body>
+<script>
+    const apidemo = document.querySelector(".apiDemo")
+    console.log(apidemo);
+    const requestUrl = 'https://api.github.com/users/moohiit'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestUrl);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText);
+            console.log(data)
+            apidemo.innerHTML = `
+            <img src=${data.avatar_url} alt="Avtar">
+            <br> User login:  ${data.login}
+            <br> url: ${data.url}
+            <br> Name: ${data.name}
+            <br> Bio : ${data.bio} 
+            `
+        }
+    }
+    xhr.send()
+
+</script>
+</html>
